@@ -1,0 +1,24 @@
+<div class="jumbotron"style="margin-bottom: 0px; padding-bottom: 0px;">
+    <div class="container">
+     	<center><img src="{{dp}}">
+     	<p style="margin-bottom: 0px;">{{name}}</p>
+     	<div class="btn btn-default btn-block" ng-if="thisUser" ng-click="changePP()"style="font-size: 19px; margin-bottom: 6px;"><i class="fa fa-image"></i> Change Profile Picture</div>
+     	<div class="btn btn-success btn-block" ng-if="Showmessage" ui-sref="chat({id: {{id}}})" style="font-size: 19px; margin-bottom: 6px;"><i class="fa fa-envelope-o"></i> Sent a Message/Chat</div>
+     	</center>
+    </div>
+</div>
+<div class="container">
+    <div error errorr="error" errormessage="errormessage"></div>
+	<div ng-if="showPPchange">
+		<span class="help-block">Choose the profile picture that you like.</span>
+		<div class="row">
+        	<div class="col-md-2" ng-click="changep('img/prof/cat1.png')"><center><img src="img/prof/cat1.png"></center></div>
+  			<div class="col-md-2" ng-click="changep('img/prof/cat2.png')"><center><img src="img/prof/cat2.png"></center></div>
+  			<div class="col-md-2" ng-click="changep('img/prof/cat3.png')"><center><img src="img/prof/cat3.png"></center></div>
+  			<div class="col-md-2" ng-click="changep('img/prof/cat4.png')"><center><img src="img/prof/cat4.png"></center></div>
+  			<div class="col-md-2" ng-click="changep('img/prof/cat5.png')"><center><img src="img/prof/cat5.png"></center></div>
+  			<div class="col-md-2" ng-click="changep('img/prof/cat6.png')"><center><img src="img/prof/cat6.png"></center></div>
+      </div>
+   </form>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+<div class="container" style="padding-top: 31px;">
+    <div class="btn btn-success btn-block" style="margin-bottom: 8px;" ui-sref="profile({id: {{id}}})">View Your Profile</div>
+        <div class="list-group">
+            <a class="list-group-item active">People You Know</a>
+          <a class="list-group-item" ng-repeat="user in users" ui-sref="profile({id: {{user.id}}})"><img style="width: 17%;" src="{{user.dp}}"> {{user.user}}</a>
+        </div>
+   <!-- <div class="btn btn-warning btn-block" style="margin-bottom: 8px;" ng-click="clearLog()">Clear User Cache</div>-->
+      
+    </div>
+</div>
+

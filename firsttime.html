@@ -1,0 +1,27 @@
+<div ng-show="firsttimeload">
+<div class="jumbotron">
+    <div class="container">
+      	<center>
+      		<div ng-show="nextstep">
+		        <h3>Welcome to TatarCon</h3>
+		       	<img src="img/logobig.png">
+		       	<h4>A messaging app for your house.</h4>
+		       	<div class="btn btn-primary btn-block" ng-click="nextStep()"><i class="fa fa-arrow-circle-right"></i> Join now</div>
+	       	</div>
+	       	</center>
+	       	<div ng-show="nextstep2">
+	       		<form ng-submit="joinForm()">
+	       			<div class="formgroup">
+	       				<center><img src="img/cat/16-client-cat.png"></center>
+	       				<p>Complete the form below to join</p>
+	       				<label for="name"><i class="fa fa-user"></i> Your name</label>
+	       				<input type="text" id="name" class="form-control" placeholder="Enter your name." ng-model="name">
+	       				<input type="submit" style="margin-top: 13px;" value="Join Tatarcon" class="btn btn-primary btn-block">
+	       			</div>
+	       		</form>
+	       	<div error errorr="error" errormessage="errormessage"></div>
+	       	</div>
+     	
+    </div>
+    </div>
+</div>
